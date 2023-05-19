@@ -4,10 +4,50 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Booklist App</title>
 </head>
 
+	
 <body>
 	<!-- the entire body must be written by student -->
+	<div class="container mt-4">
+		<h1 class="display-4 text-center">
+			My <span class="text-primary">Book</span>List
+		</h1>
+		
+		<form id="book-Form">
+		<div class="form-group">
+	
+		<label for="tittle">Tittle</label><br>
+		<input type="text" id="#tittle" class="form-control"/>
+	</div><br>
+	
+		<div class="form-group">
+		<label for="author">Author</label><br>
+		<input type="text" id="#author" class="form-control" />
+	</div>
+	<br>
+	<br>
+	<div class="form-group">
+		<label for="isbn">ISBN</label><br>
+		<input type="text" id="#isbn" class="form-control" />
+	</div>
+	<br>
+	<br>
+	<input type="submit" value="Add Book" class="btn btn-primary btn-block"/>
+</form>
+		<table border="1">
+			<thead>
+			<tr>
+				<th>Title</th>
+				<th>Author</th>
+				<th>ISBN</th>
+			</tr>	
+			</thead>
+			<tbody id="book-list">
+			</tbody>
+		</table>
     <script type="text/javascript" src="./script.js">
 </script>
 
